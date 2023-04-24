@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_product_attributes",
+  "info": {
+    "displayName": "Attribute",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "special_value": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "string",
+        "int",
+        "decimal"
+      ],
+      "required": true
+    },
+    "dimension": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

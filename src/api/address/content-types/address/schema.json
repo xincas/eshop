@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "singularName": "address",
+    "pluralName": "addresses",
+    "displayName": "Address"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "building": {
+      "type": "string",
+      "required": true
+    },
+    "apartment": {
+      "type": "string",
+      "required": true
+    },
+    "entrance": {
+      "type": "string"
+    },
+    "floor": {
+      "type": "string"
+    },
+    "intercom": {
+      "type": "string"
+    },
+    "full_addres": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "addresses"
+    }
+  }
+}
