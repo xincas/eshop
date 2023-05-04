@@ -13,7 +13,4 @@ module.exports = ({ env }) => ({
 			defaultDepth: 4
 		}
 	},
-	'protected-populate': {
-		enabled: true,
-	},
   });
