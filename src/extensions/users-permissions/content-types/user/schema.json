@@ -9,8 +9,7 @@
     "displayName": "User"
   },
   "options": {
-    "draftAndPublish": false,
-    "timestamps": true
+    "draftAndPublish": false
   },
   "attributes": {
     "username": {
@@ -73,23 +72,27 @@
       "minLength": 11,
       "maxLength": 11
     },
-    "orders": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::order.order",
-      "mappedBy": "users_permissions_user"
-    },
     "addresses": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::address.address",
-      "mappedBy": "users_permissions_user"
+      "mappedBy": "user"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "user"
     },
     "reviews": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::review.review",
-      "mappedBy": "users_permissions_user"
+      "mappedBy": "user"
+    },
+    "name": {
+      "type": "string",
+      "required": true
     }
   }
 }

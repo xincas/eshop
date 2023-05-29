@@ -175,6 +175,7 @@ module.exports = (plugin) => {
 			config: {
 				policies: [],
 				prefix: '',
+				auth:false
 			}
 	});
 	

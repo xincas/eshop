@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "users_permissions_user": {
+    "user": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
@@ -41,7 +41,8 @@
     "items": {
       "type": "component",
       "repeatable": true,
-      "component": "order.order-item"
+      "component": "order.order-item",
+      "required": true
     }
   }
 }
